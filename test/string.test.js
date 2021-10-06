@@ -20,3 +20,7 @@ test("handle new line when \n is there", () => {
 test("handle new delimiter" , () => {
     expect(add("//;\n1;2")).toBe(3)
 }) 
+
+test("handle negative number", () => {
+    expect(() => add("-5,2,-10,9")).toThrow();
+})
