@@ -31,15 +31,4 @@ function Add(string) {
 }
 
 
-    let split= '-5,2,-10,9'.split(",")
-    var arrOfNegatvieNo = []
-    
-    for(var i = 0;i < split.length; i++ ) {
-        let parsed = parseInt(split[i])
-        if(parsed < 0){
-            arrOfNegatvieNo.push(parsed)
-        }
-    }
-    console.log( arrOfNegatvieNo.join())
-  
 module.exports = Add
