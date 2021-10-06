@@ -1,8 +1,13 @@
 function Add(string) {
     let output = 0
+    let split; 
 
-    split = string.split(",");
-    
+    if(string == ""   ) {
+        split = string.split("")
+    } else {
+        split = string.match(/\d/g)
+    }
+
     for(var i = 0;i < split.length; i++ ) {
         let number = +split[i]
         output+=number
@@ -18,7 +23,7 @@ function Add(string) {
 }
 
 
-    let split= "1,2,3".split(",");
+    let split= "1\n2,3".match(/\d/g);
     let output = 0
     
     for(var i = 0;i < split.length; i++ ) {
