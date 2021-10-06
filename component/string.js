@@ -23,7 +23,7 @@ function Add(string) {
 }
 
 
-    let split= "1\n2,3".match(/\d/g);
+    let split= "//;\n1;2".match(/\d/g);
     let output = 0
     
     for(var i = 0;i < split.length; i++ ) {

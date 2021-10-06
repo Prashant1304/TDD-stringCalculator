@@ -17,3 +17,6 @@ test("handle new line when \n is there", () => {
     expect(add("1\n2,3")).toBe(6)
 })
 
+test("handle new delimiter" , () => {
+    expect(add("//;\n1;2")).toBe(3)
+}) 
